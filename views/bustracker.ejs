@@ -1,0 +1,21 @@
+<html>
+
+    <head>
+        <link rel='stylesheet' href='main.css'>
+    </head>
+
+        <body>
+            <div id="main-div">
+                <h1 class='center'>Bus tracker</h1>
+                <p class='center'>Type your postcode below to find your nearest buses</p>
+                <h3 class='left-margin-10px'>Your postcode:</h3>
+                <form action='/submit' class='left-margin-10px' method='GET'>
+                    <input type='text' id="postcode" placeholder="Postcode" name='postcode'><br>
+                    <input type='text' id="stopNumber" placeholder="Number of stops to check" name='stopNumber'><br>
+                    <input type='text' id="radius" placeholder="Radius (meters)" name='radius'><br>
+                    <input type='submit' value='Submit' onClick=validation('postcode', 'stopNumber', 'radius')>
+                </form>
+            </div>
+        </body>
+
+</html>
